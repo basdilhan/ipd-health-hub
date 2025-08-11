@@ -71,14 +71,7 @@ Backend: PHP
 Database: SQL / MySQL 
 
 🚀 How to Run
-For End-Users:
-The application is web-based and does not require any special hardware. To access the IPD Health Hub, you only need:
 
-A computer or mobile device.
-
-A stable internet connection.
-
-A modern web browser (like Chrome, Firefox, or Safari).
 
 For Developers:
 To contribute to the development or to set up a local instance, you will need:
@@ -89,4 +82,3 @@ A local server environment (e.g., XAMPP, WAMP) that supports PHP and MySQL.
 
 The project source code.
 
-For deployment, a server architecture with sufficient processing power, storage, and security features is essential for smooth operation.
