@@ -1,0 +1,111 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        /* General Page Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #f0f0f0;
+            color: #000;
+        }
+        /* Sidebar Styling */
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background: #32e0c4;
+            color: black;
+            box-shadow: 0 4px 15px rgba(50, 224, 196, 0.3);
+            padding: 20px;
+            text-align: center;
+            border-right: 2px solid #32e0c4;
+        }
+        .sidebar h2 {
+            font-weight: 600;
+            text-shadow: 0 0 10px #32e0c4, 0 0 20px #32e0c4;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+        .sidebar ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .sidebar ul li a:hover {
+            background: #26c2aa;
+            box-shadow: 0 0 10px #32e0c4;
+            color: white;
+        }
+        /* Main Content */
+        .main-content {
+            margin-left: 270px;
+            padding: 50px;
+            width: 100%;
+            background-color: #ffffff;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            position: relative;
+        }
+        .highlight {
+            font-size: 28px;
+            font-weight: bold;
+            color: #32e0c4;
+            
+        }
+        .logo {
+            width: 80px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                filter: drop-shadow(0 0 5px #32e0c4);
+            }
+            to {
+                filter: drop-shadow(0 0 15px #32e0c4);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="appointments.php">Manage Appointments</a></li>
+            <li><a href="rooms.php">Room Availability</a></li>
+            <li><a href="alerts.php">Send Alerts</a></li>
+            <li><a href="doctors.php">Add Doctors</a></li>
+        </ul>
+    </div>
+    
+    <div class="main-content">
+        <img src="mm.ICO" alt="logo" class="logo">
+        <h1 class="highlight">Welcome to IPD Health Hub</h1>
+        <p>Use the sidebar to navigate through different management sections.</p>
+    </div>
+</body>
+</html>

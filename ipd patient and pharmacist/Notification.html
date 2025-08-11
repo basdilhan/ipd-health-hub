@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - IPD Health Hub</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            padding-top: 70px;
+            background-color: lightcyan;
+            background-image: url('back111.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .navbar {
+            background-color: #008b8b;
+        }
+        .navbar-brand, .navbar-light .navbar-nav .nav-link {
+            color: #fff;
+        }
+       
+        .nav__logo img {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .container {
+            margin-top: 50px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .toast {
+            position: absolute;
+            top: 70px;
+            right: 20px;
+            min-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="home.php">IPD Health Hub <span class="nav__logo"><img src="mm.ICO" alt="logo" class="logo-white" /></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">My Bookings</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contact.html">Contact Us</a></li>
+                 <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user-circle" style="font-size: 1.5em;"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="account.html">Profile</a>
+                            <a class="dropdown-item" href="settings.html">Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="logout.php">Log Out</a>
+                        </div>
+                    </li>
+               
+            </ul>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Notifications</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Bed Reservation Confirmed: Bed No. 101, Ward A, Date: 2024-10-19</li>
+            <li class="list-group-item">Appointment Booked: Dr. John Doe, Date: 2024-10-20</li>
+            <li class="list-group-item">Medicine Order Shipped: Order No. 12345</li>
+            <li class="list-group-item">Lab Test Results Available: Test No. 67890</li>
+        </ul>
+    </div>
+    <!-- Toast Notifications -->
+    <div class="toast" id="notificationToast1" data-delay="5000">
+        <div class="toast-header">
+            <strong class="mr-auto">Notification</strong>
+            <small class="text-muted">Just now</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+        </div>
+        <div class="toast-body">
+            Bed Reservation Confirmed: Bed No. 101, Ward A, Date: 2024-10-19
+        </div>
+    </div>
+    <div class="toast" id="notificationToast2" data-delay="5000">
+        <div class="toast-header">
+            <strong class="mr-auto">Notification</strong>
+            <small class="text-muted">Just now</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+        </div>
+        <div class="toast-body">
+            Appointment Booked: Dr. John Doe, Date: 2024-10-20
+        </div>
+    </div>
+  
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <p class="mt-3">&copy; 2024 IPD Health Hub. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap and jQuery Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science-Backed Health Guide | Holistic Wellness</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #2d3843;
+            background: #f8fafc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1498837167922-ddd27525d352') center/cover;
+            color: white;
+            border-radius: 15px;
+        }
+
+        .section-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .section-img {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #2c7a7b;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .key-fact {
+            background: #e3fafc;
+            padding: 20px;
+            border-left: 4px solid #1098ad;
+            margin: 20px 0;
+        }
+
+        ul {
+            margin: 15px 0 25px 30px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .book-card {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        .book-cover {
+            width: 300px;
+            height: 260px;
+            object-fit: cover;
+            margin: 10px auto;
+            border: 1px solid #eee;
+        }
+
+        @media (max-width: 768px) {
+            .section-card {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-img {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Science-Backed Health Optimization</h1>
+            <p>Evidence-Based Strategies for Lifelong Wellness</p>
+        </header>
+
+        <!-- Nutrition Section -->
+        <div class="section-card">
+            <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d" 
+                 alt="Healthy food assortment" 
+                 class="section-img">
+            <div>
+                <h2>Intelligent Nutrition</h2>
+                <div class="key-fact">
+                    WHO: Balanced diets reduce chronic disease risk by 60%
+                </div>
+                <ul>
+                    <li>80/20 Rule: 80% whole foods, 20% flexibility</li>
+                    <li>Superfoods: Turmeric, leafy greens, fermented foods</li>
+                    <li>Avoid hidden sugars in processed foods</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Exercise Section -->
+        <div class="section-card">
+            <div>
+                <h2>Movement for Longevity</h2>
+                <div class="key-fact">
+                    CDC: 150 weekly exercise minutes ↓ mortality risk 30%
+                </div>
+                <ul>
+                    <li>HIIT workouts for busy schedules</li>
+                    <li>Swimming/yoga for joint health</li>
+                    <li>Posture correction exercises</li>
+                </ul>
+            </div>
+            <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155" 
+                 alt="Woman exercising" 
+                 class="section-img">
+        </div>
+
+        <!-- Mental Health Section -->
+        <div class="section-card">
+            <img src="https://images.unsplash.com/photo-1593810450967-f9c42742e326" 
+                 alt="Meditation session" 
+                 class="section-img">
+            <div>
+                <h2>Stress Resilience</h2>
+                <div class="key-fact">
+                    Harvard Study: Social connection ↓ dementia risk 50%
+                </div>
+                <ul>
+                    <li>Digital detox protocols</li>
+                    <li>4-7-8 breathing technique</li>
+                    <li>Gratitude journaling</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Resource Section -->
+        <h2 style="text-align: center; margin: 50px 0">Recommended Resources</h2>
+        <div class="resource-grid">
+            <div class="book-card">
+                <img src="https://th.bing.com/th/id/OIP.wGf6t2gUCtBAMEM-sNKScQHaFs?rs=1&pid=ImgDetMain" 
+                     alt="How Not to Die book cover" 
+                     class="book-cover">
+                <p>How Not to Die<br>by Dr. Michael Greger</p>
+            </div>
+
+            <div class="book-card">
+                <img src="https://th.bing.com/th/id/OIP.3Mbs0RVAp6ATpsBgT1o6mwHaDs?w=306&h=174&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
+                     alt="Outlive book cover" 
+                     class="book-cover">
+                <p>Outlive<br>by Peter Attia</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

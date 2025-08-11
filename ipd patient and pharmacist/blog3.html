@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise and Fitness</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1574680096145-d05b474e2155') center/cover;
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2c7a7b;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        ul {
+            margin: 20px 0;
+            padding-left: 40px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .tip {
+            background: #e3fafc;
+            padding: 20px;
+            border-left: 4px solid #1098ad;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .exercise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .exercise-card {
+            background: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .exercise-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .exercise-card h3 {
+            color: #2c7a7b;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #2c7a7b;
+            color: white;
+            border-radius: 12px;
+        }
+
+        footer a {
+            color: #e3fafc;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .exercise-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Exercise and Fitness</h1>
+            <p>Your Guide to Staying Active and Healthy</p>
+        </header>
+
+        <!-- Main Content Section -->
+        <div class="content">
+            <h2>Why Exercise Matters</h2>
+            <p>Exercise is crucial for both physical and mental health. It improves cardiovascular health, boosts mental well-being, enhances strength and flexibility, supports weight management, and reduces the risk of chronic diseases.</p>
+
+            <div class="tip">
+                <strong>Tip:</strong> Start with small, achievable goals and gradually increase the intensity and duration of your workouts.
+            </div>
+
+            <h2>Types of Exercises</h2>
+            <div class="exercise-grid">
+                <div class="exercise-card">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a" alt="Cardio">
+                    <h3>Cardiovascular Exercises</h3>
+                    <p>Running, cycling, swimming, and dancing improve endurance and heart health.</p>
+                </div>
+                <div class="exercise-card">
+                    <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c" alt="Strength Training">
+                    <h3>Strength Training</h3>
+                    <p>Weight lifting, resistance bands, and bodyweight exercises build muscle strength.</p>
+                </div>
+                <div class="exercise-card">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b" alt="Flexibility">
+                    <h3>Flexibility and Stretching</h3>
+                    <p>Yoga, Pilates, and stretching improve range of motion and prevent injuries.</p>
+                </div>
+                <div class="exercise-card">
+                    <img src="https://images.unsplash.com/photo-1593810450967-f9c42742e326" alt="Balance">
+                    <h3>Balance Exercises</h3>
+                    <p>Tai Chi and single-leg stands help improve balance and prevent falls.</p>
+                </div>
+            </div>
+
+            <h2>Tips for Staying Active</h2>
+            <ul>
+                <li>Set realistic goals.</li>
+                <li>Find activities you enjoy.</li>
+                <li>Create a routine and stick to it.</li>
+                <li>Mix up your exercises to keep things interesting.</li>
+                <li>Stay hydrated and listen to your body.</li>
+                <li>Track your progress to stay motivated.</li>
+            </ul>
+
+            <h2>Sample Weekly Workout Plan</h2>
+            <div class="exercise-grid">
+                <div class="exercise-card">
+                    <h3>Monday</h3>
+                    <p>30 minutes of running (Cardio)</p>
+                </div>
+                <div class="exercise-card">
+                    <h3>Tuesday</h3>
+                    <p>Strength training (Upper body)</p>
+                </div>
+                <div class="exercise-card">
+                    <h3>Wednesday</h3>
+                    <p>Yoga (Flexibility)</p>
+                </div>
+                <div class="exercise-card">
+                    <h3>Thursday</h3>
+                    <p>30 minutes of cycling (Cardio)</p>
+                </div>
+                <div class="exercise-card">
+                    <h3>Friday</h3>
+                    <p>Strength training (Lower body)</p>
+                </div>
+                <div class="exercise-card">
+                    <h3>Saturday</h3>
+                    <p>Hiking or dancing (Cardio + Fun)</p>
+                </div>
+                <div class="exercise-card">
+                    <h3>Sunday</h3>
+                    <p>Rest or light stretching</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>For more tips on exercise and fitness, <a href="#">explore our blog</a> or consult a fitness trainer.</p>
+        </footer>
+    </div>
+</body>
+</html>
